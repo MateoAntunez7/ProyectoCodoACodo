@@ -1,0 +1,50 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ff3300;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0 20px;
+  }
+  
+  a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  a:hover,
+  a.active {
+    background-color: #333;
+  }
+  
+  .staff_info {
+    background-color: #ff3300;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .staff_info2 {
+    background-color: #ff3300;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+ 
