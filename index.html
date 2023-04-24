@@ -5,29 +5,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pagina CodoACodo</title>
+  
   <link rel="stylesheet" href="css/styles.css">
+  <script>
+    window.addEventListener("load", function () {
+      const loading = document.querySelector(".fire-loading");
+      loading.style.display = "none";
+    });
+  </script>
 </head>
 <body>
+  
+  
   <header>
+    <div class="fire-loading">
+      <div class="fire">
+        <div class="flame"></div>
+        <div class="flame"></div>
+        <div class="flame"></div>
+        <div class="flame"></div>
+        <div class="flame"></div>
+        <div class="flame"></div>
+      </div>
+      <div class="text">Cargando...</div>
+    </div>
     <nav>
       <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Personajes</a></li>
-        <li><a href="#">staff</a></li>
+        <li><a href="Staff.html">staff</a></li>
         <li><a href="#">noticias</a></li>
       </ul>
     </nav>
     <div class="header-image">
-      <img src="images/1106368.png" alt="Imagen de fondo">
+      <img src="images/1098180.png" alt="Imagen de fondo">
       <div class="header-info">
         <h2>FIRE FORCE</h2>
         <p>Fire Force es un anime de acción y ciencia ficción que sigue a un equipo de bomberos especiales que combaten a demonios que se manifiestan en humanos en Tokio. La serie está basada en el manga del mismo nombre creado por Atsushi Ōkubo.</p>
         <div class="streaming-links">
           <h3>Ver Fire Force en:</h3>
           <ul id="botonesver">
-            <li><a href="https://www.netflix.com/title/81216327">Netflix</a></li>
-            <li><a href="https://www.crunchyroll.com/fire-force">Crunchyroll</a></li>
-            <li><a href="https://www.primevideo.com/detail/0G9QWUK15LJ4H01TE4F4EJ3YCG/ref=atv_sr_def_c_unkc__1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B096Z8H45Z&qid=1663648629">Amazon Prime Video</a></li>
+            <li><a href="https://www.netflix.com/title/81216327" target="_blank">Netflix</a></li>
+            <li><a href="https://www.crunchyroll.com/fire-force" target="_blank">Crunchyroll</a></li>
+            <li><a href="https://www.primevideo.com/detail/0G9QWUK15LJ4H01TE4F4EJ3YCG/ref=atv_sr_def_c_unkc__1_1_1?sr=1-1&pageTypeIdSource=ASIN&pageTypeId=B096Z8H45Z&qid=1663648629" target="_blank">Amazon Prime Video</a></li>
           </ul>
         </div>
       </div>
@@ -116,22 +136,32 @@
       </div>
     </section>
 
-    <section class="contact-us">
-      <h2>Contáctanos</h2>
-      <form action="">
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <label for="message">Mensaje:</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        <input type="submit" value="Enviar">
-      </form>
-    </section>
+    <div id="contacto" style="position: relative;">
+      <img src="images/thumb-1920-720685 (2).png" alt="Descripción de tu imagen" style="width: 100%;">
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <section class="contact-us">
+          <h2>Contáctanos</h2>
+          <p>Unete a la 8va brigada para enterarte de las novedades</p>
+          <form action="">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Mensaje:</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Enviar">
+          </form>
+        </section>
+      </div>
+    </div>
+    
+    
   </main>
 
   <footer>
     <p>Derechos reservados © 2023</p>
   </footer>
+  
+  
 </body>
 </html>

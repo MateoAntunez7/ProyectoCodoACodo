@@ -125,6 +125,7 @@ a.active {
 .contact-us {
   background-color: #fff;
   padding: 50px;
+  border-radius: 10%;
 }
 
 .contact-us h2 {
@@ -251,5 +252,98 @@ label {
   width: 100%;
   height: auto;
   max-width: 200px; /* ajusta el tamaño máximo de la imagen */
+}
+
+footer{
+  text-align:  center;
+  
+  color: #ff3300;
+}
+
+.fire-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 9999;
+  display: none; /* Ocultar el div de carga por defecto */
+}
+
+.fire-loading.show {
+  display: flex; /* Mostrar el div de carga cuando se agrega la clase 'show' */
+  align-items: center;
+  justify-content: center;
+}
+
+.fire {
+  width: 100px;
+  height: 140px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.flame {
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 55px;
+  border-radius: 10px 10px 0 0;
+  background: #ffcd00;
+  animation: 2s ease-in-out infinite flame;
+}
+
+.flame:nth-child(1) {
+  left: 0;
+  animation-delay: 0.1s;
+}
+
+.flame:nth-child(2) {
+  left: 20px;
+  animation-delay: 0.2s;
+}
+
+.flame:nth-child(3) {
+  left: 40px;
+  animation-delay: 0.3s;
+}
+
+.flame:nth-child(4) {
+  left: 60px;
+  animation-delay: 0.4s;
+}
+
+.flame:nth-child(5) {
+  left: 80px;
+  animation-delay: 0.5s;
+}
+
+.flame:nth-child(6) {
+  left: 100px;
+  animation-delay: 0.6s;
+}
+
+.text {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@keyframes flame {
+  0% {
+    transform: scaleY(1) rotate(-45deg);
+  }
+  20% {
+    transform: scaleY(1.1) rotate(-45deg);
+  }
+  40% {
+    transform: scaleY(1) rotate(-45deg);
+  }
+  100% {
+    transform: scaleY(0.7) rotate(-45deg);
+  }
 }
 
