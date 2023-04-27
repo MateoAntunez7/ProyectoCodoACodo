@@ -1,0 +1,100 @@
+/* Estilos para el nav */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #ff3300;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0 20px;
+  }
+  
+  a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  a:hover,
+  a.active {
+    background-color: #333;
+  }
+  body{
+    background-color: #333;
+  }
+ 
+  section {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-right: 20px; /* Agrega un margen a la derecha de cada sección */
+    vertical-align: top; /* Alinea las secciones en la parte superior */
+    
+}
+
+section .descripcion {
+    display: none;
+}
+
+section:hover .descripcion {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 30px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 5%;
+    padding: 15px;
+}
+
+section:hover img {
+    transform: scale(1.2);
+    background-color: #ff3300;
+    padding: 20px;
+    background-clip: padding-box;
+    border-radius: 10%;
+}
+
+img{
+    
+    margin-left: 50px;
+    width: 200px;
+}
+.container:hover {
+    background-color: white;
+  }
+  
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ff3300;
+    text-align: center;
+    background-color: #fff;
+    font-size: 50px;
+    margin-top: 200px;
+    border-radius: 10%;
+}
+
+footer{
+    text-align:  center;
+    background-color: beige;
+    color: #ff3300;
+  }
