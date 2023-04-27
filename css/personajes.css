@@ -69,7 +69,7 @@ section:hover .descripcion {
 section:hover img {
     transform: scale(1.2);
     background-color: #ff3300;
-    padding: 20px;
+    padding: 3px;
     background-clip: padding-box;
     border-radius: 10%;
 }
