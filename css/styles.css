@@ -122,29 +122,166 @@ a.active {
 }
 
 /* Estilos para la sección de Contáctanos */
-.contact-us {
-  background-color: #fff;
-  padding: 50px;
-  border-radius: 10%;
+#formulario {
+  width: 100%;
+  background-image: url(../images/letter.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  margin: auto;
 }
 
-.contact-us h2 {
-  font-size: 36px;
-  text-align: center;
-  margin-bottom: 20px;
+#contacto {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90vh;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
-form {
+#contacto section{
   display: flex;
   flex-direction: column;
-  max-width: 600px;
-  margin: 0 auto;
+  width: 20%;
+  border: 1px solid white;
+  background-color: rgb(255, 51, 0);
+  height: 60%; 
+  justify-content: center;
+  align-items: center;
 }
 
-label {
-  font-size: 18px;
-  margin-bottom: 10px;
+#boton {
+  margin-top: 1rem;
+  background-color: rgb(255,90,0);
+  color: white;
+  padding: 0.5rem;
+  width: 20rem;
+  margin: auto;
+  align-items: center;
 }
+
+#boton:hover {
+  background-color: rgb(255, 193, 0);
+}
+
+#email {
+  margin-bottom: 2rem;
+  height: 2.6vh;
+  width: 19.6rem;
+  text-align: center;
+  align-items: center;
+}
+form {
+  padding: 2rem 0 2rem 0;
+}
+
+#lateral {
+  background-image: url(../images/contact.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contacto>section h2 {
+  font-size: xx-large;
+  text-align: center;
+  color: white;
+}
+
+#contacto>section p {
+  font-size: large;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (min-width:1280px) and (max-width:1900px) {
+  #boton {
+    margin-top: 1rem;
+    background-color: rgb(255,90,0);
+    color: white;
+    padding: 0.5rem;
+    width: 14.1rem;
+    margin: auto;
+    align-items: center;
+  }
+  
+  #email {
+    margin-bottom: 2rem;
+    height: 4.5vh;
+    width: 13.6rem;
+    text-align: center;
+    align-items: center;
+  }
+  
+  #formulario {
+    margin-bottom: 3rem;
+  }
+}
+
+/*////////////////////ANIMACIÓN.//////////////////*/
+
+.titulo-ecg-vertical {
+  font-size: 2em;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.titulo-ecg-vertical::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 20%;
+  height: 100%;
+  background-color: #f44336;
+  opacity: 0.5;
+  animation: ecg-vertical 1.5s linear infinite;
+}
+
+@keyframes ecg-vertical {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(50px);
+  }
+  20% {
+    transform: translateX(100px);
+  }
+  30% {
+    transform: translateX(150px);
+  }
+  40% {
+    transform: translateX(200px);
+  }
+  50% {
+    transform: translateX(250px);
+  }
+  60% {
+    transform: translateX(300px);
+  }
+  70% {
+    transform: translateX(350px);
+  }
+  80% {
+    transform: translateX(400px);
+  }
+  90% {
+    transform: translateX(450px);
+  }
+  100% {
+    transform: translateX(475px);
+  }
+}
+
 /* Estilos para el contenedor de la imagen */
 .header-image {
   position: relative;
