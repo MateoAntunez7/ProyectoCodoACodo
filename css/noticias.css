@@ -1,0 +1,98 @@
+/* Estilos para la navegacion */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #ff3300;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+.icono {
+    align-items:initial;
+}
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0 20px;
+  }
+  
+  a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  a:hover,
+  a.active {
+    background-color: #333;
+  }
+
+/*Estilos main*/
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.noticias {
+    flex-basis: 60%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+}
+.noticias article {
+    margin-bottom: 20px;
+}
+.noticias h3 {
+    margin-top: 0%;
+}
+.noticias img {
+    width: 60%;
+    height: auto;
+  }
+
+  /*Estilos formulario*/
+.contacto {
+    flex-basis: 35%;
+}
+
+.contacto form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contacto form input,
+.contacto form textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.contacto form input[type="submit"] {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+
+/*Estilos pie de pagina*/
+  footer{
+    text-align:  center;
+    color: #ff3300;
+  }
+  
