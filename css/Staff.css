@@ -112,6 +112,12 @@ footer{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 2;
   }
+  ul{
+    flex-direction: column;
+  }
+  li {
+    margin: 10px 0;
+  }
   a {
     display: block;
     color: #fff;
@@ -126,8 +132,10 @@ footer{
   }
   .staff_info {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /*flex-direction: row;*/
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    justify-content: center;
     align-items: center;
     margin: 50px auto;
     background-color: #ff3300;
