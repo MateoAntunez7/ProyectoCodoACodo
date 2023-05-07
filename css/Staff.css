@@ -4,6 +4,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
   background-color: #ff3300;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -112,12 +113,7 @@ footer{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 2;
   }
-  ul{
-    flex-direction: column;
-  }
-  li {
-    margin: 10px 0;
-  }
+ 
   a {
     display: block;
     color: #fff;
