@@ -4,6 +4,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
   background-color: #ff3300;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -112,6 +113,7 @@ footer{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 2;
   }
+ 
   a {
     display: block;
     color: #fff;
@@ -126,8 +128,10 @@ footer{
   }
   .staff_info {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /*flex-direction: row;*/
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    justify-content: center;
     align-items: center;
     margin: 50px auto;
     background-color: #ff3300;

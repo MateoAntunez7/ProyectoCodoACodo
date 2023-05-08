@@ -1,0 +1,68 @@
+/* Estilos básicos para todo el documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Estilos para el contenido principal */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para las secciones */
+  section {
+    margin: 20px 0;
+  }
+  
+  /* Estilos para los miembros del equipo */
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10%;
+    color: #fff;
+    
+  }
+  
+  .team-member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .team-member h3 {
+    margin: 10px 0 5px;
+  }
+  
+  .team-member p {
+    margin: 0;
+  }
+  
+  /* Estilos para las diferentes dimensiones de pantalla */
+  @media (min-width: 768px) {
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .team-member {
+      width: 30%;
+    }
+  }
+  
