@@ -8,7 +8,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100% 100% auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas: "header"
       "main"
       "arcos"
