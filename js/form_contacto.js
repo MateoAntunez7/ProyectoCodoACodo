@@ -10,26 +10,28 @@ function comprobar() {
 
     if (!emailRegex.test(emailInput.value)) {
 
-        document.getElementById("email").style.color="#ff3300";
+        if(emailInput.value != "") {           
 
-        document.getElementById("email").value="Ingresa un correo electrónico válido."
+            document.getElementById("email").style.color="#ff3300";
+            document.getElementById("email").value="Ingresa un correo electrónico válido."
+            document.getElementById("email").style.fontStyle="italic";
+        }
+        
+    } else {
+        
+        const formData = new FormData();
+        formData.append('email', emailInput.value.trim());
 
-        document.getElementById("email").style.fontStyle="italic";
+        fetch('https://formspree.io/f/xyyaogqr', {
+            method: 'POST',
+            mode: "no-cors",
+            body: formData,
 
+        }).then(response => response.json()).then(formData);
 
-    }
-
-    const formData = new FormData();
-    formData.append('email', emailInput.value.trim());
-
-    fetch('https://formspree.io/f/xyyaogqr', {
-        method: 'POST',
-        body: formData
-    })
-        .then(response => response.json())
-        .then(data)
-
-    */
+        alert("¡Gracias! El formulario ha sido enviado con éxito.");
+        document.getElementById("email").value="";
+        }
     });
 }
 
