@@ -3,8 +3,8 @@ const teamMembers = [
   {
     nombre: "Enzo Mateo Antunez",
     imagen: "../images/Foto-Mateo.jpg",
-    descripcion: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet voluptatum nisi vero natus architecto harum est voluptates, commodi dolore, vel similique odit temporibus, itaque eius. Sapiente odit quia natus!",
-    linkedin: "https://www.linkedin.com/",
+    descripcion: "Full Stack Developer",
+    linkedin: "https://www.linkedin.com/in/enzo-mateo-ant%C3%BAnez-662036260/",
     github: "https://github.com/Mateoantunez7"
   },
   {
