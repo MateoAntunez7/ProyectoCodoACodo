@@ -12,15 +12,29 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="personajes.html">Personajes</a></li>
-            <li><a href="Staff.html">staff</a></li>
-            <li><a href="#">noticias</a></li>
-        </ul>
-    </nav>
-
+    <header>
+        <nav>
+            <div>
+                <ul class="nav_items" id="_items">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="Staff.html">staff</a></li>
+                <li><a href="noticias.html">noticias</a></li>
+            </ul>
+        </div>
+        <div class="nav_toggle" id="_toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        </nav>
+        <script>
+            _toggle.onclick = () =>{
+              _items.classList.toggle("open")
+              _toggle.classList.toggle("close")
+            }
+          </script>
+    </header>
     <div>
         <div class="contenedor">
             <div class="foto salida">
@@ -158,6 +172,7 @@
 
     </main>
 
+   
     <script src="js/carousel.js"></script>
 
 </body>
