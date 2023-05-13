@@ -9,10 +9,10 @@ const teamMembers = [
   },
   {
     nombre: "German Anselmo",
-    imagen: "ruta/a/la/imagen2.jpg",
-    descripcion: "Descripción del miembro 2",
-    linkedin: "https://www.linkedin.com/",
-    github: "https://github.com/"
+    imagen: "../images/german.jpeg",
+    descripcion: "Python Software and FrontEnd Vue.js Developer with hundred of hours of practice with it's languages and a good amount of libraries and frameworks. Also learning Java.",
+    linkedin: "https://www.linkedin.com/in/german-anselmo/",
+    github: "https://github.com/gmanselmo"
   },
   {
     nombre: "Martina Lopez",
