@@ -16,10 +16,10 @@ const teamMembers = [
   },
   {
     nombre: "Martina Lopez",
-    imagen: "",
-    descripcion: "Descripción del miembro 3",
-    linkedin: "https://www.linkedin.com/",
-    github: "https://github.com/"
+    imagen: "../images/Foto martu.jpg",
+    descripcion: "Data Analitycs.Actualmente, estudiando para mejorar mis habilidades en estas áreas.",
+    linkedin: "https://www.linkedin.com/in/martina-lopez-367939154/",
+    github: "https://github.com/martu288"
   }
 ];
 
