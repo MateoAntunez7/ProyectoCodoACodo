@@ -1,57 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personajes</title>
     <link rel="stylesheet" href="css/personajes.css">
+    <link rel="stylesheet" href="css/carrousel.css">
+    <script src="https://kit.fontawesome.com/736a9e645e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <nav>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="personajes.html">Personajes</a></li>
-          <li><a href="Staff.html">staff</a></li>
-          <li><a href="#">noticias</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="Staff.html">staff</a></li>
+            <li><a href="#">noticias</a></li>
         </ul>
-      </nav>
-      
-      <main>
-        <div id="titulopersonaje"> <h1> PERSONAJES </h1></div>
+    </nav>
+
+    <div>
+        <div class="contenedor">
+            <div class="foto salida">
+                <img src="images/slider1.webp">
+            </div>
+            <div class="foto salida">
+                <img src="images/slider2.webp">
+            </div>
+            <div class="foto salida">
+                <img src="images/slider3.webp">
+            </div>
+            <div class="foto salida">
+                <img src="images/slider4.webp">
+            </div>
+            <div class="foto salida">
+                <img src="images/slider5.webp">
+            </div>
+
+            <a class="anterior" onclick="siguienteImagen(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+            <a class="proxima" onclick="siguienteImagen(1)"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div id="caja-circulos">
+            <span class="punto" onclick="seleccionarImagen(1)"></span>
+            <span class="punto" onclick="seleccionarImagen(2)"></span>
+            <span class="punto" onclick="seleccionarImagen(3)"></span>
+            <span class="punto" onclick="seleccionarImagen(4)"></span>
+            <span class="punto" onclick="seleccionarImagen(5)"></span>
+        </div>
+    </div>
+
+    <div id="titulopersonaje">
+        <h1> PERSONAJES </h1>
+    </div>
+
+    <main>
+        
         <section>
             <img src="images/Shinra.jpg" alt="Shinra Kusakabe">
             <div class="descripcion">
                 <h2>Shinra Kusakabe</h2>
-                <p>Shinra Kusakabe es un bombero de tercera generación y el protagonista principal de Fire Force. Tiene la habilidad de controlar y crear fuego a través de sus pies, y utiliza esta habilidad para combatir contra las criaturas infernales que amenazan la ciudad.</p>
+                <p>Shinra Kusakabe es un bombero de tercera generación y el protagonista principal de Fire Force. Tiene
+                    la habilidad de controlar y crear fuego a través de sus pies, y utiliza esta habilidad para combatir
+                    en la ciudad.</p>
             </div>
         </section>
         <section>
             <img src="images/Arthur.jpg" alt="Arthur Boyle">
             <div class="descripcion">
                 <h2>Arthur Boyle</h2>
-                <p>Arthur Boyle es un bombero de tercera generación y uno de los mejores amigos de Shinra. Tiene la habilidad de controlar y crear fuego a través de su espada, la cual cree que es una "espada sagrada".</p>
+                <p>Arthur Boyle es un bombero de tercera generación y uno de los mejores amigos de Shinra. Tiene la
+                    habilidad de controlar y crear fuego a través de su espada, la cual cree que es una "espada
+                    sagrada".</p>
             </div>
         </section>
         <section>
             <img src="images/Maki.jpg" alt="Maki Oze">
             <div class="descripcion">
                 <h2>Maki Oze</h2>
-                <p>Maki Oze es una bombero de tercera generación y miembro de la Compañía de Bomberos Especiales de Tokio. Tiene la habilidad de controlar y crear fuego a través de sus puños, y es una de las combatientes más fuertes de la compañía.</p>
+                <p>Maki Oze es una bombero de tercera generación y miembro de la Compañía de Bomberos Especiales de
+                    Tokio. Tiene la habilidad de controlar y crear fuego a través de sus puños, y es  la más fuerte.</p>
             </div>
         </section>
         <section>
             <img src="images/Iris.jpg" alt="Iris">
             <div class="descripcion">
                 <h2>Iris</h2>
-                <p>Iris es una monja y miembro de la Compañía de Bomberos Especiales de Tokio. Tiene la habilidad de curar las heridas y enfermedades a través de la oración, y utiliza esta habilidad para ayudar a sus compañeros durante las misiones.</p>
+                <p>Iris es una monja y miembro de la Compañía de Bomberos Especiales de Tokio. Tiene la habilidad de
+                    curar las heridas y enfermedades a través de la oración, y utiliza esta habilidad para ayudar a sus
+                    compañeros durante las misiones.</p>
             </div>
         </section>
         <section>
             <img src="images/Tamaki.jpg" alt="Iris">
             <div class="descripcion">
                 <h2>Tamaki Kotatsu</h2>
-                <p>Es una de las miembros de la Compañía 1 de bomberos especiales y posee el poder de controlar las llamas negras.</p>
+                <p>Es una de las miembros de la Compañía 1 de bomberos especiales y posee el poder de controlar las
+                    llamas negras.</p>
             </div>
         </section>
         <section>
@@ -72,41 +119,50 @@
             <img src="images/Viktor.jpg" alt="Iris">
             <div class="descripcion">
                 <h2>Viktor Licht</h2>
-                <p>Es un científico e investigador de la Compañía 8 de bomberos especiales y es experto en el estudio de las llamas.</p>
+                <p>Es un científico e investigador de la Compañía 8 de bomberos especiales y es experto en el estudio de
+                    las llamas.</p>
             </div>
         </section>
         <section>
             <img src="images/Lisa.jpg" alt="Iris">
             <div class="descripcion">
                 <h2>Lisa Isaribe</h2>
-                <p>Es una investigadora de la Compañía 8 de bomberos especiales y es experta en el estudio de los materiales pirotécnicos.</p>
+                <p>Es una investigadora de la Compañía 8 de bomberos especiales y es experta en el estudio de los
+                    materiales pirotécnicos.</p>
             </div>
         </section>
         <section>
             <img src="images/Joker.jpg" alt="Iris">
             <div class="descripcion">
                 <h2>Joker</h2>
-                <p>Es un misterioso personaje que trabaja en la sombra y que parece estar relacionado con el pasado de Shinra Kusakabe.</p>
+                <p>Es un misterioso personaje que trabaja en la sombra y que parece estar relacionado con el pasado de
+                    Shinra Kusakabe.</p>
             </div>
         </section>
         <section>
             <img src="images/Sho.jpg" alt="Iris">
             <div class="descripcion">
                 <h2>Shō Kusakabe</h2>
-                <p>es un pirocinético de la cuarta generación, y el Comandante de los "Caballeros de las Llamas Luminosas". El hermano menor de Shinra Kusakabe.</p>
+                <p>es un pirocinético de la cuarta generación, y el Comandante de los "Caballeros de las Llamas
+                    Luminosas". El hermano menor de Shinra Kusakabe.</p>
             </div>
         </section>
         <section>
             <img src="images/Vulcan.jpg" alt="Iris">
             <div class="descripcion">
                 <h2>Vulcan Joseph</h2>
-                <p>Es un ingeniero de la 8va Brigada Especial de Bomberos de Tokyo Cuando trabaja, usa una máscara de un cráneo de cordero de aspecto espeluznante con cuernos retorcidos y gafas protectoras</p>
+                <p>Es un ingeniero de la 8va Brigada Especial de Bomberos de Tokyo Cuando trabaja, usa una máscara de un
+                    cráneo de cordero de aspecto espeluznante con cuernos retorcidos y gafas protectoras</p>
             </div>
         </section>
-        
+
     </main>
+
+    <script src="js/carousel.js"></script>
+
 </body>
 <footer>
     <p>Derechos reservados © 2023</p>
 </footer>
+
 </html>

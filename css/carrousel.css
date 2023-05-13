@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box
+}
+
+.contenedor {
+  max-width: 1050px;
+  position: relative;
+  margin: auto;
+}
+
+.foto img {
+    margin: 0;
+    width: 100%;
+  }
+
+.foto {
+  display: none;
+}
+
+.anterior, .proxima {
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  transition: 1s ease;
+  border-radius: 50%;
+}
+
+.proxima {
+  border-radius: 50%;
+  right: 0;
+}
+
+.anterior:hover, .proxima:hover {
+  color: gray;
+}
+
+#caja-circulos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  flex-direction: row;
+  column-gap: 2rem;
+  background-color: #ff3300;
+  margin-top: -0.2rem;
+  
+}
+
+.punto {
+  height: 0.5rem;
+  width:0.5rem;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.punto:hover {
+  background-color: #717171;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.salida {
+  animation-name: salida;
+  animation-duration: 1.5s;
+}
+
+@keyframes salida {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
