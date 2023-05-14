@@ -2,8 +2,8 @@
 const teamMembers = [
   {
     nombre: "Enzo Mateo Antunez",
-    imagen: "../images/Foto-Mateo.jpg",
-    descripcion: "Full Stack Developer",
+    imagen: "../images/foto mateo2.jpg",
+    descripcion: "Estudiante avanzado de ingenieria en sistemas de informacion, Desarrolador Full Stack ",
     linkedin: "https://www.linkedin.com/in/enzo-mateo-ant%C3%BAnez-662036260/",
     github: "https://github.com/Mateoantunez7",
   },
@@ -16,8 +16,8 @@ const teamMembers = [
   },
   {
     nombre: "Martina Lopez",
-    imagen: "../images/Foto martu.jpg",
-    descripcion: "Data Analitycs.Actualmente, estudiando para mejorar mis habilidades en estas áreas.",
+    imagen: "../images/foto martu2.jpg",
+    descripcion: "Data Analitycs.Actualmente   estudiando para mejorar mis habilidades en estas áreas.",
     linkedin: "https://www.linkedin.com/in/martina-lopez-367939154/",
     github: "https://github.com/martu288",
   }
