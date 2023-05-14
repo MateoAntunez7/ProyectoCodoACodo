@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,68 +10,88 @@
 </head>
 
 <body>
-   
+
   <header>
     <nav>
       <div>
-      <ul class="nav_items" id="_items">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="personajes.html">Personajes</a></li>
-        <li><a href="Staff.html">staff</a></li>
-        <li><a href="noticias.html">noticias</a></li>
-      </ul>
-    </div>
-    <div class="nav_toggle" id="_toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+        <ul class="nav_items" id="_items">
+          <li class="liHeader"><a class="aHeader" href="index.html">Inicio</a></li>
+          <li class="liHeader"><a class="aHeader" href="personajes.html">Personajes</a></li>
+          <li class="liHeader"><a class="aHeader" href="Staff.html">staff</a></li>
+          <li class="liHeader"><a class="aHeader" href="noticias.html">noticias</a></li>
+        </ul>
+      </div>
+      <div class="nav_toggle" id="_toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
     <script>
-      _toggle.onclick = () =>{
+      _toggle.onclick = () => {
         _items.classList.toggle("open")
         _toggle.classList.toggle("close")
       }
     </script>
   </header>
 
-  <div>
-    <section class="staff_info">
-      <div>
-        <img src="images/Atsushi_Ohkubo.webp" alt="">
-      </div>
-      <div>
-        <h2>Creador: Atsushi Ohkubo</h2>
-        <p>Atsushi Ōkubo 「大久保 篤 ?, Ōkubo Atsushi」, romanizado como Atsushi Ohkubo, es un autor de manga japonés (mangaka), conocido por su trabajo en el manga Soul Eater, adaptado el 7 de abril de 2008 al formato Anime de parte del estudio Bones. Ohkubo trabajó como asistente de Rando Ayamine, en la serie de manga Get Backers. Él también creó ilustraciones para varias tarjetas para el juego Lord of Vermillion y algunos diseños de personajes en Bravely Default.</p>
-      </div>
-    </section>
+  <main>
 
-    <section class="staff_info">
-      <div>
-        <img src="images/57990.jpg" alt="Director_animacion">
-      </div>
-      <div>
-        <h2>Director de animacion: Kazuhiro Miwa</h2>
-        <p>Kazuhiro Miwa es un reconocido Director de animacion y que ha colaborado con el diseño de personajes en innumerables animes como Tokyo Ghoul, Bleach, Demon Slayer, entre otros. Ademas fue el encargado de la animacion de los openings y endings de My Hero Academia.</p>
-      </div>
-    </section>
-  </div>
+    <div>
+      <section class="staff_info">
+        <div>
+          <img src="images/Atsushi_Ohkubo.webp" alt="">
+        </div>
+        <div>
+          <h2>Creador: Atsushi Ohkubo</h2>
+          <p>Atsushi Ōkubo 「大久保 篤 ?, Ōkubo Atsushi」, romanizado como Atsushi Ohkubo, es un autor de manga japonés
+            (mangaka), conocido por su trabajo en el manga Soul Eater, adaptado el 7 de abril de 2008 al formato Anime
+            de
+            parte del estudio Bones. Ohkubo trabajó como asistente de Rando Ayamine, en la serie de manga Get Backers.
+            Él
+            también creó ilustraciones para varias tarjetas para el juego Lord of Vermillion y algunos diseños de
+            personajes en Bravely Default.</p>
+        </div>
+      </section>
 
-  <div>
-    <section class="staff_info">
-      <div>
-        <h2>Equipo de Producción</h2>
-        <p>Yuki Yase: Es el director de la serie, ha trabajado en otras producciones como Mekakucity Actors y Hidamari Sketch.</p>
-        <p>Hideyuki Morioka: Es el diseñador de personajes y director de animación de la serie, ha trabajado en otras producciones como Kizumonogatari y The Sky Crawlers.</p>
-        <p>Yousuke Kuroda: Es el guionista de la serie, ha trabajado en otras producciones como Gundam Build Fighters y Trigun.</p>
-        <p>Kenichiro Suehiro: Es el compositor de la música de la serie, ha trabajado en otras producciones como Goblin Slayer y Golden Kamuy.</p>
-        <p>Yoshiki Usa: Es el director de arte de la serie, ha trabajado en otras producciones como Kekkai Sensen y Space Dandy.</p>
-      </div>
-    </section>
+      <section class="staff_info">
+        <div>
+          <img src="images/57990.jpg" alt="Director_animacion">
+        </div>
+        <div>
+          <h2>Director de animacion: Kazuhiro Miwa</h2>
+          <p>Kazuhiro Miwa es un reconocido Director de animacion y que ha colaborado con el diseño de personajes en
+            innumerables animes como Tokyo Ghoul, Bleach, Demon Slayer, entre otros. Ademas fue el encargado de la
+            animacion de los openings y endings de My Hero Academia.</p>
+        </div>
+      </section>
+    </div>
+
+    <div>
+      <section class="staff_info">
+        <div id="staf">
+          <h2>Equipo de Producción</h2>
+          <p><b>Yuki Yase</b>: Es el director de la serie, ha trabajado en otras producciones como Mekakucity Actors y Hidamari
+            Sketch.</p>
+          <p style="padding-top: 1rem"><b>Hideyuki Morioka</b>: Es el diseñador de personajes y director de animación de la serie, ha trabajado en otras
+            producciones como Kizumonogatari y The Sky Crawlers.</p>
+          <p style="padding-top: 1rem"><b>Yousuke Kuroda</b>: Es el guionista de la serie, ha trabajado en otras producciones como Gundam Build Fighters
+            y
+            Trigun.</p>
+          <p style="padding-top: 1rem"><b>Kenichiro Suehiro</b>: Es el compositor de la música de la serie, ha trabajado en otras producciones como
+            Goblin
+            Slayer y Golden Kamuy.</p>
+          <p style="padding-top: 1rem"><b>Yoshiki Usa</b>: Es el director de arte de la serie, ha trabajado en otras producciones como Kekkai Sensen y
+            Space Dandy.</p>
+        </div>
+      </section>
+
+  </main>
 
   <footer>
     <p>Derechos reservados © 2023</p>
   </footer>
 
 </body>
+
 </html>
