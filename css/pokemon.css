@@ -1,0 +1,26 @@
+body {
+    background-image: url("../images/pokemon3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 639.98px) {
+    body {
+        background-image: url("../images/pokemon1.png");
+    }
+}
+  
+@media screen and (min-width: 640px) and (max-width: 991.98px) {
+    body {
+        background-image: url("../images/pokemon2.png");
+    }
+}
+  
+@media screen and (min-width: 992px) and (max-width: 1365.98px) {
+    body {
+        background-image: url("../images/pokemon3.png");
+    }
+}
+  
+  
