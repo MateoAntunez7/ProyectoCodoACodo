@@ -16,26 +16,27 @@
         <nav>
             <div>
                 <ul class="nav_items" id="_items">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="personajes.html">Personajes</a></li>
-                <li><a href="Staff.html">staff</a></li>
-                <li><a href="noticias.html">noticias</a></li>
-            </ul>
-        </div>
-        <div class="nav_toggle" id="_toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="personajes.html">Personajes</a></li>
+                    <li><a href="Staff.html">staff</a></li>
+                    <li><a href="noticias.html">noticias</a></li>
+                </ul>
+            </div>
+            <div class="nav_toggle" id="_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
-        <script>
-            _toggle.onclick = () =>{
-              _items.classList.toggle("open")
-              _toggle.classList.toggle("close")
-            }
-          </script>
     </header>
-    <div>
+    
+    <div id="titulopersonaje">
+        <h1>PERSONAJES</h1>
+    </div>
+    
+    
+
+    <div id="vueltasLocas">
         <div class="contenedor">
             <div class="foto salida">
                 <img src="images/slider1.webp">
@@ -66,12 +67,8 @@
         </div>
     </div>
 
-    <div id="titulopersonaje">
-        <h1> PERSONAJES </h1>
-    </div>
-
     <main>
-        
+
         <section>
             <img src="images/Shinra.jpg" alt="Shinra Kusakabe">
             <div class="descripcion">
@@ -95,7 +92,7 @@
             <div class="descripcion">
                 <h2>Maki Oze</h2>
                 <p>Maki Oze es una bombero de tercera generación y miembro de la Compañía de Bomberos Especiales de
-                    Tokio. Tiene la habilidad de controlar y crear fuego a través de sus puños, y es  la más fuerte.</p>
+                    Tokio. Tiene la habilidad de controlar y crear fuego a través de sus puños, y es la más fuerte.</p>
             </div>
         </section>
         <section>
@@ -172,8 +169,9 @@
 
     </main>
 
-   
+
     <script src="js/carousel.js"></script>
+    <script src="js/personajes.js"></script>
 
 </body>
 <footer>
