@@ -7,16 +7,32 @@
   <title>Staff Fire Force</title>
   <link rel="stylesheet" href="css/Staff.css">
 </head>
+
 <body>
+   
+  <header>
     <nav>
-      <ul>
+      <div>
+      <ul class="nav_items" id="_items">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="personajes.html">Personajes</a></li>
         <li><a href="Staff.html">staff</a></li>
         <li><a href="noticias.html">noticias</a></li>
       </ul>
+    </div>
+    <div class="nav_toggle" id="_toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     </nav>
-
+    <script>
+      _toggle.onclick = () =>{
+        _items.classList.toggle("open")
+        _toggle.classList.toggle("close")
+      }
+    </script>
+  </header>
 
   <div>
     <section class="staff_info">

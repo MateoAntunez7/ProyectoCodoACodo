@@ -21,7 +21,7 @@
 </head>
 
 <body>
-
+  
   <header>
     <div class="fire-loading">
       <div class="fire">
@@ -36,13 +36,26 @@
     </div>
 
     <nav>
-      <ul>
-        <li class="liHeader"><a class="aHeader" href="index.html">Inicio</a></li>
-        <li class="liHeader"><a class="aHeader" href="personajes.html">Personajes</a></li>
-        <li class="liHeader"><a class="aHeader" href="Staff.html">staff</a></li>
-        <li class="liHeader"><a class="aHeader" href="noticias.html">noticias</a></li>
-      </ul>
+      <div>
+        <ul class="nav_items" id="_items">
+          <li class="liHeader"><a class="aHeader" href="index.html">Inicio</a></li>
+          <li class="liHeader"><a class="aHeader" href="personajes.html">Personajes</a></li>
+          <li class="liHeader"><a class="aHeader" href="Staff.html">staff</a></li>
+          <li class="liHeader"><a class="aHeader" href="noticias.html">noticias</a></li>
+        </ul>
+      </div>
+      <div class="nav_toggle" id="_toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
+    <script>
+      _toggle.onclick = () =>{
+        _items.classList.toggle("open")
+        _toggle.classList.toggle("close")
+      }
+    </script>
   </header>
 
   <main>
