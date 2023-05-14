@@ -25,7 +25,6 @@ function mostrarImagenes(n) {
   puntos[indiceImagen-1].className += " active";
 }
 
-// Deslizador automático
 let contador = setInterval(() => {
   siguienteImagen(1);
 }, 4000);

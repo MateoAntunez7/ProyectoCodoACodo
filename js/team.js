@@ -5,21 +5,21 @@ const teamMembers = [
     imagen: "../images/Foto-Mateo.jpg",
     descripcion: "Full Stack Developer",
     linkedin: "https://www.linkedin.com/in/enzo-mateo-ant%C3%BAnez-662036260/",
-    github: "https://github.com/Mateoantunez7"
+    github: "https://github.com/Mateoantunez7",
   },
   {
     nombre: "German Anselmo",
     imagen: "../images/german.jpeg",
-    descripcion: "Python Software and FrontEnd Vue.js Developer with hundred of hours of practice with it's languages and a good amount of libraries and frameworks. Also learning Java.",
+    descripcion: "Python Software and Web Developer with hundred of hours of practice with it's languages and a good amount of libraries and frameworks. Also learning Java and Vue.js.",
     linkedin: "https://www.linkedin.com/in/german-anselmo/",
-    github: "https://github.com/gmanselmo"
+    github: "https://github.com/gmanselmo",
   },
   {
     nombre: "Martina Lopez",
     imagen: "../images/Foto martu.jpg",
     descripcion: "Data Analitycs.Actualmente, estudiando para mejorar mis habilidades en estas áreas.",
     linkedin: "https://www.linkedin.com/in/martina-lopez-367939154/",
-    github: "https://github.com/martu288"
+    github: "https://github.com/martu288",
   }
 ];
 
