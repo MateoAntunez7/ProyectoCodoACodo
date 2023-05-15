@@ -167,6 +167,77 @@
   #boton {
     background-color: rgba(255, 51, 0, 1);
   }
+
+  .nav_items {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    background-color: rgba(255, 51, 0, 0.98);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+  }
+
+  .nav_items a {
+    text-align: center;
+  }
+
+  .liHeader:hover {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .nav_toggle {
+    display: flex !important;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .nav_toggle span {
+    width: 30px;
+    height: 4px;
+    background-color: #f2f2f2;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+  }
+
+  .close span {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+
+  .close span:nth-child(2) {
+    display: none;
+  }
+
+  .close span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px, 1px);
+  }
+
+  .open {
+    transform: translateX(0);
+  }
+  
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .centro {
+    margin-top: 10px;
+  }
+
+  .equipo p,
+  .juego p {
+    display: none;
+  }
+
+
 }
 
 @media screen and (min-width: 640px) and (max-width: 991.98px) {
@@ -311,6 +382,59 @@
     font-size: 1.2rem;
   }
 
+ .nav_items {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    background-color: rgba(255, 51, 0, 0.98);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+  }
+
+  .nav_items a {
+    text-align: center;
+  }
+
+  .liHeader:hover {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .nav_toggle {
+    display: flex !important;
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .nav_toggle span {
+    width: 30px;
+    height: 4px;
+    background-color: #f2f2f2;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+  }
+
+  .close span {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+
+  .close span:nth-child(2) {
+    display: none;
+  }
+
+  .close span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px, 1px);
+  }
+
+  .open {
+    transform: translateX(0);
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1365.98px) {

@@ -101,10 +101,63 @@ a.active {
 }
 
 footer {
-  text-align: center;
-  background-color: #ff3300;
-  color: white;
-  padding: 2rem 0 2rem;
+  grid-area: footer;
+  background-color: rgba(255, 51, 0, 1);
+  color: #ffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  text-shadow: none;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.equipo {
+  display: flex;
+  align-items: center;
+}
+
+.equipo i {
+  font-size: 36px;
+  color: #ffff;
+  margin-right:0 10px;
+}
+
+.equipo p{ 
+  font-weight: 400;
+  margin: 10px;
+}
+
+.centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.centro p { 
+  font-weight: 400;
+  margin: 0;
+}
+
+.juego {
+  grid-area: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.juego i {
+  font-size: 36px;
+  color: #ffffff;
+  margin-left:0 10px;
+}
+
+.juego p {
+  font-weight: 400;
+  margin: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -238,4 +291,20 @@ footer {
     transform: translateX(0);
   }
 
+}
+@media only screen and (max-width: 640px) {
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .centro {
+    margin-top: 10px;
+  }
+
+  .equipo p,
+  .juego p {
+    display: none;
+  }
 }
