@@ -9,40 +9,45 @@ main {
   padding: 3rem 0.5rem 0 0.5rem;
 }
 
+header {
+  grid-area: header;
+}
+
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   width: 100%;
-  background-color: #ff3300;
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  height: auto;
+  background-color: rgba(255, 51, 0, 1);
+  border-radius: 0rem 0rem 1.25rem 1.25rem;
+  position: fixed;
 }
 
 ul {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  column-gap: 2.25rem;
+}
+
+.liHeader {
+  color: white;
+  font-size: 1rem;
+  padding: 1.25rem;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-li {
-  margin: 0 20px;
+.liHeader:hover {
+  background-color: rgba(51, 51, 51, 1);
 }
 
-a {
-  display: block;
-  color: #fff;
-  text-transform: uppercase;
+.aHeader {
   text-decoration: none;
-  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
   font-weight: bold;
-  padding: 20px;
-  transition: background-color 0.2s ease-in-out;
 }
+
 
 a:hover,
 a.active {
