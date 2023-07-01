@@ -55,17 +55,18 @@
 
 
   
-<<div class="container">
+<div id="app" class="container">
   <h1>Volumenes del manga</h1>
 <br>  
 <hr>
 <div class="row">
-  <div class="col-md-4">
+  <!-- <tr v-for = "manga in mangas" class=""> -->
+    <div v-for = "manga in mangas" class="col-md-4">
       <figure class="card card-product">
-          <div class="img-wrap"><img src="images/mangas/manga1 fire force.jpg"></div>
+          <div class="img-wrap"><img :src="manga.imagen"></div>
           <figcaption class="info-wrap">
-                  <h4 class="title">Titulo</h4>
-                  <p class="desc">Volumen x</p>
+                  <h4 class="title">{{manga.titulo}}</h4>
+                  <p class="desc">Volumen {{manga.volumen}}</p>
           </figcaption>
           
       </figure>
@@ -85,18 +86,17 @@
       <figure class="card card-product">
           <div class="img-wrap"><img src="images/mangas/manga1 fire force.jpg"></div>
           <figcaption class="info-wrap">
-              <h4 class="title">Titulo</h4>
+              <h4 class="title">titulo</h4>
               <p class="desc">Volumen x</p>
                   
           </figcaption>
           
       </figure>
   </div> <!-- col // -->
+
   </div> <!-- row.// -->
-  
-  
-  
-  </div> 
+</div>
+
 
 
 
@@ -124,7 +124,7 @@
 </div>
 </footer>
 
-
-
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="js/mangas.js"></script>
 </body>
 </html>
