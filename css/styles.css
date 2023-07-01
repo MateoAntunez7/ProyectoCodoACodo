@@ -96,7 +96,7 @@ main {
   flex-wrap: nowrap;
   justify-content: center;
   justify-items: center;
-  width: 45;
+  width: 45%;
   padding: 6rem 0rem 7rem 0rem;
   height: fit-content;
 
@@ -169,6 +169,7 @@ h3 {
   width: auto;
   padding: 0rem 1rem 0rem 0rem;
   height: fit-content;
+  margin-top: 6rem;
 }
 
 #divSection2 {

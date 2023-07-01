@@ -2,7 +2,7 @@ new Vue({
   el: '#app',
   data() {
     return {
-      url: 'http://fireforce.pythonanywhere.com/mangas',
+      url: 'https://fireforce.pythonanywhere.com/mangas',
       mangas: [],
       error: false,
       cargando: true,
