@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/mediaQueries.css">
-    <link rel="stylesheet" href="css/animacion.css">
-    <link rel="stylesheet" href="css/mangas.css">
-    <link rel="stylesheet" href="css/abmMangas.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/20ccff358b.js" crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mangas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mediaQueries.css">
+  <link rel="stylesheet" href="css/animacion.css">
+  <link rel="stylesheet" href="css/mangas.css">
+  <link rel="stylesheet" href="css/abmMangas.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/20ccff358b.js" crossorigin="anonymous"></script>
 
 
 </head>
+
 <body>
-    <header>
+  <header style="z-index: 2">
     <nav>
       <div>
         <ul class="nav_items" id="_items">
@@ -29,7 +34,7 @@
           <li class="liHeader"><a class="aHeader" href="mangas.html">Mangas</a></li>
           <li class="liHeader"><a class="aHeader" href="Staff.html">staff</a></li>
           <li class="liHeader"><a class="aHeader" href="noticias.html">noticias</a></li>
-          <a href="login.html" style="float: right;" class="btn btn-sm btn-dark">Login</a>
+          <a href="http://fireforce.pythonanywhere.com/" target="_blank" style="float: right;" class="btn btn-sm btn-dark">Login</a>
         </ul>
       </div>
       <div class="nav_toggle" id="_toggle">
@@ -45,86 +50,55 @@
       }
     </script>
   </header>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
 
-
-  
-<div id="app" class="container">
-  <h1>Volumenes del manga</h1>
-<br>  
-<hr>
-<div class="row">
-  <!-- <tr v-for = "manga in mangas" class=""> -->
-    <div v-for = "manga in mangas" class="col-md-4">
-      <figure class="card card-product">
+  <div id="app" class="container mt-5">
+    <h1 class="mt-5">Volumenes del manga</h1>
+    <br>
+    <hr>
+    <div class="row">
+      <!-- <tr v-for = "manga in mangas" class=""> -->
+      <div v-for="manga in mangas" class="col-md-4" style="z-index: 1">
+        <figure class="card card-product">
           <div class="img-wrap"><img :src="manga.imagen"></div>
           <figcaption class="info-wrap">
-                  <h4 class="title">{{manga.titulo}}</h4>
-                  <p class="desc">Volumen {{manga.volumen}}</p>
+            <h4 class="title">{{manga.titulo}}</h4>
+            <p class="desc">Volumen {{manga.volumen}}</p>
           </figcaption>
-          
-      </figure>
-  </div> <!-- col // -->
-  <div class="col-md-4">
-      <figure class="card card-product">
-          <div class="img-wrap"><img src="images/mangas/manga1 fire force.jpg"> </div>
-          <figcaption class="info-wrap">
-              <h4 class="title">Titulo</h4>
-              <p class="desc">Volumen x</p>
-                 
-          </figcaption>
-          
-      </figure>
-  </div> <!-- col // -->
-  <div class="col-md-4">
-      <figure class="card card-product">
-          <div class="img-wrap"><img src="images/mangas/manga1 fire force.jpg"></div>
-          <figcaption class="info-wrap">
-              <h4 class="title">titulo</h4>
-              <p class="desc">Volumen x</p>
-                  
-          </figcaption>
-          
-      </figure>
-  </div> <!-- col // -->
 
-  </div> <!-- row.// -->
-</div>
+        </figure>
+      </div> <!-- col // -->
+    </div> <!-- row.// -->
+  </div>
 
 
 
 
 
-<br>
-<br>
+  <br>
+  <br>
 
-<footer>
-<div class="footer-container">
-<div class="equipo">
-  <a href="team.html" target="_blank">
-    <i class="fa-solid fa-people-group fa-fw animated bounce"></i>
-  </a>
-  <p>Team</p>
-</div>
-<div class="centro">
-  <p>Derechos reservados © 2023</p>
-</div>
-<div class="juego">
-  <a href="pokemon.html" target="_blank">
-    <i class="fa-solid fa-gamepad"></i>
-  </a>
-  <p>Probá nuestro último juego</p>
-</div>
-</div>
-</footer>
+  <footer>
+    <div class="footer-container">
+      <div class="equipo">
+        <a href="team.html" target="_blank">
+          <i class="fa-solid fa-people-group fa-fw animated bounce"></i>
+        </a>
+        <p>Team</p>
+      </div>
+      <div class="centro">
+        <p>Derechos reservados © 2023</p>
+      </div>
+      <div class="juego">
+        <a href="pokemon.html" target="_blank">
+          <i class="fa-solid fa-gamepad"></i>
+        </a>
+        <p>Probá nuestro último juego</p>
+      </div>
+    </div>
+  </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-<script src="js/mangas.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="js/mangas.js"></script>
 </body>
+
 </html>
